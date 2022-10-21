@@ -12,6 +12,6 @@ def simple_mult(a):
         if a % i == 0:
             list_1.append(i)
             return simple_mult(a//i)
-    return list_1
+    return 
 simple_mult(num)
 print(f"Список простых множителей числa {num} равен ",list_1)
