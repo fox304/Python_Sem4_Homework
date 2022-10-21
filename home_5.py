@@ -2,7 +2,7 @@
 #  Задача - сформировать файл, содержащий сумму многочленов.
 
 
-f1 = "124*x**9 - 3*x**5 - 2*x**3 - 6*x**2 + 4*x -57 = 0"
+f1 = "-4*x**9 - 3*x**5 - 2*x**3 - 6*x**2 + 4*x -1= 0"
 f2 = "8*x**4 - 4*x**3 + 3*x**2 - 12 = 0"
 
 
@@ -53,7 +53,7 @@ def format_files_12(my_file_1: str, my_file_2: str):
 
 # создание словаря коэффициентов
 def create_ratio_poly_dict(poly_list_1, poly_list_2):
-    
+    print(poly_list_1, poly_list_2)
     for j in poly_list_1:
         if "*x**" in j:
             j1 = j.split("*x**")
@@ -77,8 +77,9 @@ def create_ratio_poly_dict(poly_list_1, poly_list_2):
 
 # подсчёт суммы коэффициентов
 def sum_coefficients():                              
-
+   
     for i in range(10):
+        
         result[str(i)] = int(ratio_poly_dict_1[str(i)]) \
                 + int(ratio_poly_dict_2[str(i)])
 
@@ -110,8 +111,8 @@ poly_lists = format_files_12(file_polynomiales[0], file_polynomiales[1])
 
 create_ratio_poly_dict(poly_lists[0], poly_lists[1])
 
-sum_coefficients()
-print(result)
+# sum_coefficients()
 
 
-new_expression()
+
+# new_expression()
