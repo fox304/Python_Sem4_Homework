@@ -29,3 +29,5 @@ for i in range(1,10000000,4):
     result += Decimal(4/i - 4/(i+2))
 
 print("Число пи методом Лейбница будет равно ",result.quantize(Decimal(d)))
+
+print()
